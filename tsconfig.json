@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"],
+  "extend": {
+    "animation": {
+      "slideDown": "slideDown 0.4s ease-out"
+    },
+    "keyframes": {
+      "slideDown": {
+        "0%": { "transform": "translateY(-100%)", "opacity": 0 },
+        "100%": { "transform": "translateY(0)", "opacity": 1 }
+      }
+    }
+  }
+}
